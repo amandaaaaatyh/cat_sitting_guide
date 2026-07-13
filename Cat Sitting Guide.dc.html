@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&amp;family=Karla:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script component-from-global-scope="image-slot" from="./image-slot.js"></script>
+  <style>
+    body { margin: 0; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+  </style>
+</helmet>
+
+<div style="font-family: 'Karla', sans-serif; background: oklch(0.97 0.015 75); color: oklch(0.28 0.03 50); max-width: 560px; margin: 0 auto; min-height: 100vh; box-shadow: 0 0 40px rgba(0,0,0,0.06); position: relative; padding-bottom: 60px;">
+
+  <!-- Cover -->
+  <div style="padding: 56px 28px 40px; text-align: center; background: linear-gradient(180deg, oklch(0.93 0.04 55), oklch(0.97 0.015 75) 90%);">
+    <div style="font-size: 44px; margin-bottom: 6px; animation: float 3.2s ease-in-out infinite;">🐾</div>
+
+    <div style="font-family: 'Lora', serif; font-weight: 700; font-size: 30px; letter-spacing: -0.3px; color: oklch(0.32 0.06 40);">The Cat-Sitting Guide</div>
+    <div style="margin-top: 10px; font-size: 15px; color: oklch(0.45 0.03 50); line-height: 1.5;">Everything you need to look after<br>Bonnie, Tifa &amp; Soybean — thank you so much for helping out!</div>
+  </div>
+
+  <!-- Nav chips -->
+  <div style="display: flex; gap: 8px; overflow-x: auto; padding: 16px 20px; -webkit-overflow-scrolling: touch;">
+    <a href="#door" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">🚪 Door</a>
+    <a href="#cats" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">🐱 The Cats</a>
+    <a href="#feeding" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">🍽️ Feeding</a>
+    <a href="#litter" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">🧹 Litter</a>
+    <a href="#house" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">🏠 House</a>
+    <a href="#rules" style="flex: none; text-decoration: none; font-size: 13px; font-weight: 600; color: oklch(0.4 0.08 45); background: oklch(0.93 0.03 60); padding: 8px 14px; border-radius: 999px;">✅ Do's &amp; Don'ts</a>
+  </div>
+
+  <!-- DOOR SECTION -->
+  <div id="door" data-screen-label="Door" style="padding: 8px 20px 36px; scroll-margin-top: 12px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">🚪</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Getting In &amp; Out</div>
+    </div>
+
+    <div style="font-weight: 700; font-size: 13px; color: oklch(0.5 0.08 45); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px;">Entering the house</div>
+    <div style="border-radius: 18px; overflow: hidden; background: #111; aspect-ratio: 9/16; max-height: 480px; margin: 0 auto 18px;">
+      <video src="uploads/IMG_8605.mp4" controls="" playsinline="" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+    </div>
+
+    <div style="background: white; border-radius: 16px; padding: 20px 20px 22px; margin-bottom: 24px;">
+      <div style="font-weight: 700; font-size: 14px; color: oklch(0.5 0.1 40); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 12px;">Step by step</div>
+      <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.5;">
+        <li>Telegram me when you're about to reach 📱</li>
+        <li>Tap the panel and the number pad will appear</li>
+        <li>Type in the passcode</li>
+        <li>The gate will unlock, and the main door will unlock shortly after</li>
+        <li style="font-weight: 600; color: oklch(0.42 0.12 40);">⚠️ Push the main door with your leg right after opening the gate — it locks back quite quickly!</li>
+      </ol>
+    </div>
+
+    <div style="font-weight: 700; font-size: 13px; color: oklch(0.5 0.08 45); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px;">Exiting the house</div>
+    <div style="border-radius: 18px; overflow: hidden; aspect-ratio: 9/16; max-height: 480px; margin: 0 auto 18px;">
+      <img src="uploads/5956056687145848158.jpg" alt="Exit photo - key location" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+    </div>
+    <div style="border-radius: 18px; overflow: hidden; background: #111; aspect-ratio: 9/16; max-height: 480px; margin: 0 auto 18px;">
+      <video src="uploads/IMG_8608.mp4" controls="" playsinline="" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+    </div>
+
+    <div style="background: white; border-radius: 16px; padding: 20px 20px 22px;">
+      <div style="font-weight: 700; font-size: 14px; color: oklch(0.5 0.1 40); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 12px;">Step by step</div>
+      <ol style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.5;">
+        <li>The key is in the nook above the oven — it's the <span style="font-weight: 600;">non-labelled</span> one</li>
+        <li style="color: oklch(0.5 0.03 50);">🟡 The yellow labelled key next to it is for the letter box, not the door!</li>
+        <li>Open the door</li>
+        <li>Insert the key into the gate lock</li>
+        <li>Turn anticlockwise</li>
+        <li>Once the gate is unlocked, place the key back in the nook 🔑</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- CATS SECTION -->
+  <div id="cats" data-screen-label="The Cats" style="padding: 8px 20px 36px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">🐱</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Meet the Cats</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: white; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: flex-start;">
+        <div style="width: 84px; height: 84px; flex: none;">
+          <img src="uploads/5956056687145848160.jpg" alt="Bonnie" style="width: 84px; height: 84px; border-radius: 50%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-family: 'Lora', serif; font-weight: 700; font-size: 18px; margin-bottom: 4px;">Bonnie</div>
+          <div style="font-size: 14px; color: oklch(0.5 0.03 50); line-height: 1.5;">Manja boi, high energy — will sniff and nibble lightly. Favorite spot is his cat tree next to the window.</div>
+        </div>
+      </div>
+
+      <div style="background: white; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: flex-start;">
+        <div style="width: 84px; height: 84px; flex: none;">
+          <img src="uploads/5956056687145848161.jpg" alt="Tifa" style="width: 84px; height: 84px; border-radius: 50%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-family: 'Lora', serif; font-weight: 700; font-size: 18px; margin-bottom: 4px;">Tifa</div>
+          <div style="font-size: 14px; color: oklch(0.5 0.03 50); line-height: 1.5;">Cautious and slow to get close, but really affectionate once comfortable. Favorite toys are a shiny scrunchie, and prawn and sardine toys.</div>
+        </div>
+      </div>
+
+      <div style="background: white; border-radius: 16px; padding: 18px; display: flex; gap: 14px; align-items: flex-start;">
+        <div style="width: 84px; height: 84px; flex: none;">
+          <img src="uploads/5956056687145848159.jpg" alt="Soybean" style="width: 84px; height: 84px; border-radius: 50%; object-fit: cover; display: block;">
+        </div>
+        <div style="flex: 1; min-width: 0;">
+          <div style="font-family: 'Lora', serif; font-weight: 700; font-size: 18px; margin-bottom: 4px;">Soybean</div>
+          <div style="font-size: 14px; color: oklch(0.5 0.03 50); line-height: 1.5;">Nicknames: Bean Bean, Miss Foldy Paws. Loves to whine, and only meows for food.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEEDING SECTION -->
+  <div id="feeding" data-screen-label="Feeding" style="padding: 8px 20px 36px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">🍽️</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Feeding Schedule</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid oklch(0.92 0.02 60);">
+        <div>
+          <div style="font-weight: 700; font-size: 15px;">Morning &amp; Evening</div>
+          <div style="font-size: 13px; color: oklch(0.55 0.03 50);">6:30 AM &amp; 6:30 PM</div>
+        </div>
+        <div style="font-size: 14px; color: oklch(0.4 0.03 50); text-align: right;">Purina One + Fancy Feast</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid oklch(0.92 0.02 60);">
+        <div style="display: flex; justify-content: space-between;">
+          <div style="font-weight: 600; font-size: 14px;">Soybean</div>
+          <div style="font-size: 14px; color: oklch(0.4 0.03 50);">1/2 portion</div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <div style="font-weight: 600; font-size: 14px;">Bonnie</div>
+          <div style="font-size: 14px; color: oklch(0.4 0.03 50);">a bit more than 1/4</div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <div style="font-weight: 600; font-size: 14px;">Tifa</div>
+          <div style="font-size: 14px; color: oklch(0.4 0.03 50);">a bit less than 1/4</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 12px; font-size: 13px; color: oklch(0.55 0.03 50); padding: 0 4px;">One pump of salmon oil consistently for all three (freeze-dried egg yolks can also be added).</div>
+  </div>
+
+  <!-- LITTER SECTION -->
+  <div id="litter" data-screen-label="Litter Box" style="padding: 8px 20px 36px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">🧹</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Litter Box Care</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid oklch(0.92 0.02 60);">
+        <div style="font-weight: 700; font-size: 15px;">Soybean</div>
+        <div style="font-size: 14px; color: oklch(0.4 0.03 50); text-align: right;">Master bedroom — scoop attached to her litterbox</div>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid oklch(0.92 0.02 60);">
+        <div style="font-weight: 700; font-size: 15px;">Bonnie</div>
+        <div style="font-size: 14px; color: oklch(0.4 0.03 50); text-align: right;">Cat room — scoop &amp; poop bags in the broom box (kitchen)</div>
+      </div>
+      <div style="display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid oklch(0.92 0.02 60);">
+        <div style="font-weight: 700; font-size: 15px;">Tifa</div>
+        <div style="font-size: 14px; color: oklch(0.4 0.03 50); text-align: right;">Cat condo — scoop &amp; poop bags in the broom box (kitchen)</div>
+      </div>
+      <div style="font-size: 14px; color: oklch(0.4 0.03 50);">Clear pee and poop every evening.</div>
+    </div>
+  </div>
+
+  <!-- HOUSE INFO -->
+  <div id="house" data-screen-label="House Info" style="padding: 8px 20px 36px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">🏠</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Wifi &amp; House Info</div>
+    </div>
+    <div style="background: white; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+      <div>
+        <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: oklch(0.55 0.05 45);">Wifi Network</div>
+        <div style="font-size: 15px; margin-top: 2px;">Till's Humble Abode</div>
+      </div>
+      <div>
+        <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: oklch(0.55 0.05 45);">Wifi Password</div>
+        <div style="font-size: 15px; margin-top: 2px;">Tilam@135<br></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DO'S AND DON'TS -->
+  <div id="rules" data-screen-label="Do's and Don'ts" style="padding: 8px 20px 20px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+      <div style="font-size: 22px;">✅</div>
+      <div style="font-family: 'Lora', serif; font-weight: 600; font-size: 22px; color: oklch(0.32 0.06 40);">Do's &amp; Don'ts</div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="background: oklch(0.94 0.04 145); border-radius: 14px; padding: 14px 16px; font-size: 14px; color: oklch(0.3 0.05 145);">✅ Soybean and Tifa can hang out together</div>
+      <div style="background: oklch(0.94 0.04 145); border-radius: 14px; padding: 14px 16px; font-size: 14px; color: oklch(0.3 0.05 145);">✅ Throw the poop bag right after collection — otherwise it'll stink up the house</div>
+      <div style="background: oklch(0.94 0.05 30); border-radius: 14px; padding: 14px 16px; font-size: 14px; color: oklch(0.32 0.08 30);">🚫 Make sure all cats are in their respective rooms before opening the main door</div>
+      <div style="background: oklch(0.94 0.05 30); border-radius: 14px; padding: 14px 16px; font-size: 14px; color: oklch(0.32 0.08 30);">🚫 Do not mix Bonnie and Tifa — Tifa will hiss</div>
+      <div style="background: oklch(0.94 0.05 30); border-radius: 14px; padding: 14px 16px; font-size: 14px; color: oklch(0.32 0.08 30);">🚫 Before entering Bonnie's room, make sure Tifa is in the cat condo or together with Soybean in her room — Bonnie is fast and has a tendency to dash out</div>
+    </div>
+  </div>
+
+  <div style="text-align: center; padding: 24px 20px 4px; font-size: 13px; color: oklch(0.6 0.03 50);">Thank you for taking such good care of them 💛</div>
+</div>
+
+</x-dc>
+</body>
+</html>
